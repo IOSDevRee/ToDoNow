@@ -4,7 +4,7 @@ An Android to-do list app that uses SQLite Database for data storage.
 
 Featuring:
 	
-+ It allows users to manage their groceries list easily. The user can create a new list, view list, edit list.
++ It allows users to manage their daily schedule or groceries list easily. The user can create a newlist, viewlist, editlist.
 + The list on click will show details about item on new fragment.
 + The list item can be deleted on completion.
 + The task pending will be still showing in summary of to-do list.

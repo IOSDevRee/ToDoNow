@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d7d0d0"
+        android:id="@+id/maincontainer"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToDo NOW"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:padding="15dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Task"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/eddesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Desc"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="375dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_margin="20dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/tv"
+                    android:layout_gravity="center_horizontal"
+
+                    android:hint="Click todo for detail, delete or update"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    />
+                <ListView
+                    android:id="@android:id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+
+        android:layout_margin="30dp"
+        android:backgroundTint="#bab7b7"
+        android:id="@+id/fab"
+        android:src="@drawable/ic_add_circle_outline_black_24dp"
+        />
+
+</FrameLayout>
